@@ -1,0 +1,162 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>KIT College Coimbatore</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+header {
+    background: #002147;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://images.unsplash.com/photo-1580587771525-78b9dba3b914') no-repeat center/cover;
+    height: 90vh;
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.hero h2 {
+    font-size: 45px;
+}
+
+.hero button {
+    padding: 12px 25px;
+    background: orange;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.hero button:hover {
+    background: red;
+}
+
+/* Sections */
+.section {
+    padding: 50px;
+    text-align: center;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #f4f4f4;
+    padding: 20px;
+    width: 220px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    background: #002147;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background: #002147;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+</style>
+
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+    <h1>KIT College</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <h2>Welcome to KIT College Coimbatore</h2>
+    <p>Empowering Students for a Better Future</p>
+    <button onclick="showMessage()">Explore More</button>
+</section>
+
+<!-- About -->
+<section id="about" class="section">
+    <h2>About Us</h2>
+    <p>
+        KIT College is a premier institution in Coimbatore providing quality 
+        education in engineering and technology with modern infrastructure 
+        and experienced faculty.
+    </p>
+</section>
+
+<!-- Courses -->
+<section id="courses" class="section">
+    <h2>Our Courses</h2>
+    <div class="cards">
+        <div class="card">Computer Science Engineering</div>
+        <div class="card">Mechanical Engineering</div>
+        <div class="card">Electrical Engineering</div>
+        <div class="card">Civil Engineering</div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>Email: info@kitcollege.com</p>
+    <p>Phone: +91 9876543210</p>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 KIT College Coimbatore</p>
+</footer>
+
+<script>
+function showMessage() {
+    alert("Welcome to KIT College 🚀");
+}
+</script>
+
+</body>
+</html>
+```
